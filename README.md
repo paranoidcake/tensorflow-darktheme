@@ -4,7 +4,7 @@ Dockerfile and help scripts to get a modified docker image from tensorflow/tenso
 
 ## Build docker image
 
-`docker build -t <tag> https://github.com/paranoidcake/tensorflow-darktheme.git:docker`
+`docker build -t <tag> https://github.com/paranoidcake/tensorflow-darktheme.git#master:docker`
 
 ## Run docker image
 
