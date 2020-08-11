@@ -17,3 +17,5 @@ case "$SHELL" in
         echo "### Added by tensorflow-darktheme ###" >> $HOME/.bashrc
         echo "alias $TFALIAS=$runcmd" >> $HOME/.bashrc
         echo "### ----------------------------- ###" >> $HOME/.bashrc
+        ;;
+esac
