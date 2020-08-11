@@ -1,18 +1,3 @@
-###
-#
-# Dockerfile to apply some custom changes to tensorflow's docker image
-#
-# Build with:
-# docker build -t <tag> .
-#
-# Run with:
-# docker run --gpus all -it -p 8888:8888 -v $PWD:/tf <tag>
-#
-# Which will mount the current directory into the directory opened by the notebook
-#
-###
-
-
 FROM tensorflow/tensorflow:latest-gpu-jupyter
 
 ### Dark theme / Nbxtensions
