@@ -3,7 +3,7 @@ docker build -t tensorflow-darktheme https://github.com/paranoidcake/tensorflow-
 
 : ${TFALIAS:="tfgpu"}
 
-runcmd='docker run --gpus all -it -p 8888:8888 -v $PWD:/tf tensorflow/darktheme'
+runcmd='docker run --gpus all -it -p 8888:8888 -v $PWD:/tf tensorflow-darktheme'
 
 case "$SHELL" in
     *zsh*)
