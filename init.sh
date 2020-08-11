@@ -9,13 +9,13 @@ case "$SHELL" in
     *zsh*)
         echo "" >> $HOME/.zshrc
         echo "# Lines added by tensorflow-darktheme #" >> $HOME/.zshrc
-        echo "alias $TFALIAS=$runcmd" >> $HOME/.zshrc
+        echo "alias $TFALIAS=\'$runcmd\'" >> $HOME/.zshrc
         echo "# ----------------------------------- #" >> $HOME/.zshrc
         ;;
     *bash*)
         echo "" >> $HOME/.bashrc
         echo "# Lines added by tensorflow-darktheme #" >> $HOME/.bashrc
-        echo "alias $TFALIAS=$runcmd" >> $HOME/.bashrc
+        echo "alias $TFALIAS=\'$runcmd\'" >> $HOME/.bashrc
         echo "# ----------------------------------- #" >> $HOME/.bashrc
         ;;
 esac
