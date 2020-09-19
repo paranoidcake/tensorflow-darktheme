@@ -1,5 +1,15 @@
 FROM tensorflow/tensorflow:latest-gpu-jupyter
 
+### Python libraries
+
+## Tensorflow Datasets
+
+RUN pip install tensorflow-datasets
+
+## Pandas
+
+RUN pip install pandas
+
 ### Dark theme / Nbxtensions
 
 # Install dependencies
@@ -31,3 +41,5 @@ RUN touch $HOME/.ipython/profile_default/startup/00_startup.py
 # Append plot settings
 RUN echo -e "from jupyterthemes import jtplot" >> $HOME/.ipython/profile_default/startup/00_startup.py
 RUN echo -e "jtplot.style(theme='monokai', context='notebook', ticks=True, grid=False)" >> $HOME/.ipython/profile_default/startup/00_startup.py
+
+COPY jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
