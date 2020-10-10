@@ -4,16 +4,16 @@ FROM tensorflow/tensorflow:latest-gpu-jupyter
 
 ## Tensorflow Datasets
 
-RUN pip install tensorflow-datasets
+RUN pip install --no-cache-dir tensorflow-datasets
 
 ## Pandas
 
-RUN pip install pandas
+RUN pip install --no-cache-dir pandas
 
 ### Dark theme / Nbxtensions
 
 # Install dependencies
-RUN pip install jupyter_contrib_nbextensions jupyterthemes
+RUN pip install --no-cache-dir jupyter_contrib_nbextensions jupyterthemes
 
 # Configure theme and install extensions
 RUN jt -t monokai -f fira -nfs 11 -N -kl -cursc r -T -lineh 150
