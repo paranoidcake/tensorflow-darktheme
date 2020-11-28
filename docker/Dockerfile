@@ -21,14 +21,8 @@ RUN jupyter contrib nbextension install --symlink
 
 RUN jupyter nbextension enable notify/notify
 RUN jupyter nbextension enable scroll_down/main
-RUN jupyter nbextension enable freeze/main
 RUN jupyter nbextension enable execute_time/ExecuteTime
-RUN jupyter nbextension enable move_selected_cells/main
-RUN jupyter nbextension enable autosavetime/main
-RUN jupyter nbextension enable code_prettify/code_prettify
 RUN jupyter nbextension enable table_beautifier/main
-RUN jupyter nbextension enable hinterland/hinterland
-RUN jupyter nbextension enable spellchecker/main
 RUN jupyter nbextension enable toggle_all_line_numbers/main
 
 ### Startup script to fix inline plots
